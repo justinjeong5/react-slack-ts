@@ -9,11 +9,14 @@
   "author": "justinjeong5",
   "license": "ISC",
   "dependencies": {
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
+    "@types/webpack-dev-server": "^3.11.1",
     "css-loader": "^5.1.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-refresh": "^0.9.0",
     "style-loader": "^2.0.0",
     "ts-node": "^9.1.1",
     "typescript": "^4.2.3"
@@ -31,6 +34,7 @@
     "eslint-plugin-prettier": "^3.3.1",
     "prettier": "^2.2.1",
     "webpack": "^5.24.3",
-    "webpack-cli": "^4.5.0"
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
   }
 }
