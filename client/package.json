@@ -10,6 +10,7 @@
   "author": "justinjeong5",
   "license": "ISC",
   "dependencies": {
+    "@loadable/component": "^5.14.1",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
@@ -29,6 +30,7 @@
     "@babel/preset-env": "^7.13.9",
     "@babel/preset-react": "^7.12.13",
     "@babel/preset-typescript": "^7.13.0",
+    "@types/loadable__component": "^5.13.3",
     "@types/node": "^14.14.31",
     "@types/react-router": "^5.1.12",
     "@types/react-router-dom": "^5.1.7",
