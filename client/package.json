@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack serve --env development",
     "build": "TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack"
   },
   "author": "justinjeong5",

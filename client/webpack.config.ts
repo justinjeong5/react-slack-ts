@@ -69,6 +69,11 @@ const config: webpack.Configuration = {
     filename: '[name].js',
     publicPath: '/dist/',
   },
+  devServer: {
+    historyApiFallback: true, // react router
+    port: 3000,
+    publicPath: '/dist/',
+  },
 };
 
 if (isDevelopment && config.plugins) {
