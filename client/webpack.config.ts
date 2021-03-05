@@ -1,4 +1,6 @@
 import path from 'path';
+import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
+
 import webpack from 'webpack';
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
@@ -38,6 +40,11 @@ const config: webpack.Configuration = {
             '@babel/preset-react',
             '@babel/preset-typescript',
           ],
+          env: {
+            development: {
+              plugins: [require.resolve('react-refresh/babel')],
+            },
+          },
         },
         exclude: path.join(__dirname, 'node_modules'),
       },
@@ -56,5 +63,10 @@ const config: webpack.Configuration = {
     publicPath: '/dist/',
   },
 };
+
+if (isDevelopment && config.plugins) {
+  config.plugins.push(new webpack.HotModuleReplacementPlugin());
+  config.plugins.push(new ReactRefreshWebpackPlugin());
+}
 
 export default config;
